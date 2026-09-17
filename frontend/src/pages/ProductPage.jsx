@@ -89,9 +89,14 @@ export default function ProductPage() {
         saving={saving}
       />
 
-      <h3>Saved Lucky Numbers</h3>
+      <h3>
+        Saved Lucky Numbers{" "}
+        <span style={{ color: "#6b7280", fontWeight: "normal" }}>
+          ({items.length})
+       </span>
+      </h3>
 
-      {loading && <p>Loading...</p>}
+      {loading && <p style={{ color: "#6b7280" }}>Loading…</p>}
       {error && <p style={{ color: "#dc2626" }}>{error}</p>}
 
       {!loading && items.length === 0 && (

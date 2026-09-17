@@ -1,0 +1,92 @@
+.ln-form {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.ln-form h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.ln-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.ln-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 110px;
+  flex: 1;
+}
+
+.ln-field label {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.ln-field input,
+.ln-field textarea {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.ln-field input:focus,
+.ln-field textarea:focus {
+  outline: none;
+  border-color: #10b981;
+}
+
+.ln-error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0;
+}
+
+.ln-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #10b981;
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #059669;
+}
+
+.btn-secondary {
+  background: #fff;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #f3f4f6;
+}
+

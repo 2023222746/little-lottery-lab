@@ -24,5 +24,4 @@ def ping_database() -> bool:
     except ConnectionFailure:
         return False
 
-
     

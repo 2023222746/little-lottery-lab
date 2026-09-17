@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 
+from app.database import ping_database
+
 app = FastAPI(
     title="Little Lottery Data Laboratory API",
     description="Backend API for the Magnum Lucky Number Booklet.",
@@ -15,3 +17,9 @@ def read_root():
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
+
+@app.get("/db-health")
+def db_health():
+    connected = ping_database()
+    return {"mongo": "connected" if connected else "not connected"}

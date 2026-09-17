@@ -1,0 +1,66 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+
+.app-header {
+  background: #1f2937;
+  color: #fff;
+  padding: 1.5rem 2rem 1rem;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.app-subtitle {
+  margin: 0.25rem 0 1rem;
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
+
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  color: #d1d5db;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-link:hover {
+  background: #374151;
+  color: #fff;
+}
+
+.nav-link-active {
+  background: #10b981;
+  color: #fff;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
+

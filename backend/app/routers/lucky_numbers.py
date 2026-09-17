@@ -43,3 +43,5 @@ def delete_lucky_number(lucky_id: str):
     if not lucky_number_service.delete_lucky_number(lucky_id):
         raise HTTPException(status_code=404, detail="Lucky Number not found")
     return None
+
+

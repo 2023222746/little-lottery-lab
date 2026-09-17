@@ -1,12 +1,15 @@
 from fastapi import FastAPI
 
 from app.database import ping_database
+from app.routers import lucky_numbers
 
 app = FastAPI(
     title="Little Lottery Data Laboratory API",
     description="Backend API for the Magnum Lucky Number Booklet.",
     version="0.1.0",
 )
+
+app.include_router(lucky_numbers.router)
 
 
 @app.get("/")
